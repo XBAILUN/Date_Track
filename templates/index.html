@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Tracker</title>
+</head>
+<body>
+    <h1>Date Tracking in Excel Files</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload Excel file:</label>
+        <input type="file" id="file" name="file" required><br><br>
+        <label for="column_name">Column name for date tracking:</label>
+        <input type="text" id="column_name" name="column_name" placeholder="e.g., MILESTONE:6 months project deployment" required><br><br>
+        <label for="data_start_row">Data starts from row:</label>
+        <input type="number" id="data_start_row" name="data_start_row" min="1" value="3" required><br><br>
+        <label for="header_row">Header row in source sheets:</label>
+        <input type="number" id="header_row" name="header_row" min="1" value="2" required><br><br>
+        <input type="submit" value="Process File">
+    </form>
+</body>
+</html>
